@@ -145,6 +145,9 @@ jobs:
           kernel_toolchain: ${{ inputs.kernel_toolchain }}
           kernel_sign: ${{ inputs.kernel_sign }}
           kernel_config: ${{ inputs.kernel_config }}
+          kernel_path: kernel-patch/beta
+          auto_patch: true
+          
 
       - name: Upload Kernel to Release
         uses: ncipollo/release-action@main
